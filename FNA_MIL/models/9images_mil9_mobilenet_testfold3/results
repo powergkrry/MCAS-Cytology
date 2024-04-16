@@ -1,0 +1,5 @@
+train loss 0.287 train acc 0.885 -- test acc 1.000 test pre 1.000 test rec 1.000 test auc 1.000 test aps 1.000[*]
+68_adenocarcinomaNorm5 pred 0 label 0 result O
+69_adenocarcinomaNorm6 pred 0 label 0 result O
+27_adenocarcinoma5 pred 1 label 1 result O
+27_adenocarcinoma6 pred 1 label 1 result O
