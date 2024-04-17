@@ -5,4 +5,4 @@ FNA_yolov7/yolov7/runs/test/yolov7-e6e_obj_pw2.0_epoch200_t
 traced_model.pt
 yolov7-e6e_training.pt
 
-FNA_MIL/data
+FNA_MIL/data_MIL

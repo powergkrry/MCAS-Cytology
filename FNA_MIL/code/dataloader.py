@@ -119,7 +119,7 @@ def split_train_test(x_neg, x_pos, test_data_index, test_data_fold):
 
 
 def get_patient_orders():
-    base_path = '/media/data1/kanghyun/eagle_cytology/MCAS-Cytology/FNA_MIL/data/data'
+    base_path = '/media/data1/kanghyun/eagle_cytology/MCAS-Cytology/FNA_MIL/data_MIL'
     orders = os.listdir(base_path)
     test_results = [True if order[:order.find('_',10)] in all_orders['positive'] else False for order in orders]
     
