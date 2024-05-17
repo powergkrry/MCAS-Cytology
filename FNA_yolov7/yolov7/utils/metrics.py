@@ -75,6 +75,8 @@ def ap_per_class(tp, conf, pred_cls, target_cls, v5_metric=False, plot=False, sa
         plot_mc_curve(px, p, Path(save_dir) / 'P_curve.png', names, ylabel='Precision')
         plot_mc_curve(px, r, Path(save_dir) / 'R_curve.png', names, ylabel='Recall')
 
+    # np.save('precision.npy', p)
+    # np.save('recall.npy', r)
     i = f1.mean(0).argmax()  # max F1 index
     return p[:, i], r[:, i], ap, f1[:, i], unique_classes.astype('int32')
 
