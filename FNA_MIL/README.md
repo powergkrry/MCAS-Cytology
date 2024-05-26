@@ -6,4 +6,4 @@ python multi_instance_learner.py --epochs 100 --lr_schedule cyclic --experiment_
 ```
 Before training, make sure to change the fold number to 0, 1, 2, or 3.
 
-You can download data ['data_MIL'](). Save the data in the `FNA_MIL` folder.
+You can download data ['data_MIL'](https://figshare.com/ndownloader/files/46557613) and unzip it. Save the data in the `FNA_MIL` folder.
