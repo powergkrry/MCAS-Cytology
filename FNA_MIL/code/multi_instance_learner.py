@@ -1,4 +1,9 @@
 from config import get_config
+import os
+conf, unparsed = get_config()
+if conf.use_gpu:
+    os.environ['CUDA_VISIBLE_DEVICES'] = str(conf.gpu_number)
+
 from torchvision import transforms
 from utils import setup_torch, get_covid_transforms, load_model
 from dataloader import load_all_patients
@@ -7,7 +12,6 @@ from multi_instance import SimpleMIL
 from mil_trainer import ClassificationTrainer
 from torch import optim
 import warnings
-import os
 
 
 
